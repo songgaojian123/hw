@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phone Demo</title>
+    <link rel="stylesheet" href="phone.css">
+  </head>
+
+  <body>
+
+    <button class="tablink" id="DialerBtn">Dialer</button>
+    <button class="tablink" id="ContactListBtn">Contact List</button>
+    <button class="tablink" id="AddContactBtn">Add Contact</button>
+
+    <div id="Dialer" class="tabcontent">
+      <h3>Dialer</h3>
+      <p id="displayDial"> </p>
+      <table>
+      <tr><td><input type="button" id="1" onclick="dialButton(this)" value="1"></td><td><input type="button" id="2" onclick="dialButton(this)" value="2"></td><td><input type="button" id="3" onclick="dialButton(this)" value="3"></td></tr>
+      <tr><td><input type="button" id="4" onclick="dialButton(this)" value="4"></td><td><input type="button" id="5" onclick="dialButton(this)" value="5"></td><td><input type="button" id="6" onclick="dialButton(this)" value="6"></td></tr>
+      <tr><td><input type="button" id="7" onclick="dialButton(this)" value="7"></td><td><input type="button" id="8" onclick="dialButton(this)" value="8"></td><td><input type="button" id="9" onclick="dialButton(this)" value="9"></td></tr>
+      <tr><td><input type="button" id="star" onclick="dialButton(this)" value="*"></td><td><input type="button" id="0" onclick="dialButton(this)" value="0"></td><td><input type="button" id="hash" onclick="dialButton(this)" value="#"></td></tr>
+    </table><table>
+      <tr><td><input type="button" id="dial" onclick="dialNumber(this)" value="Dial"></td><td><input type="button" id="clear" onclick="clearDial(this)" value="Clear"></td></tr>
+      </table>
+    </div>
+
+    <div id="ContactList" class="tabcontent">
+      <h3>Contact List</h3>
+      <table>
+      <tr>
+      <td><button class="listItem">Brown</button></td>
+      <td><button class="listItem">Bob</button></td>
+      <td><button class="listItem">Jay</button></td>
+      </tr>
+      <tr>
+      <td> <button class="listItem">Amy</button></td>
+      <td><button class="listItem">Andy</button></td>
+      <td><button class="listItem">Joe</button></td>
+      </tr>
+      <tr>
+      <td> <button class="listItem">West</button></td>
+      <td><button class="listItem">Rich</button></td>
+      <td><button class="listItem">Paul</button></td>
+      </tr>
+    </table>
+    </div>
+
+    <div id="AddContact" class="tabcontent">
+      <h3>Add Contact</h3>
+      <form >
+        Name:<br>
+        <input type="text" placeholder="Aaron">
+        <br>
+        Phone Number:<br>
+        <input type="text" placeholder="353-565-1244">
+        <br>
+        Email Address:<br>
+        <input type="text"  placeholder="Aaron@yahoo.com">
+        <br><br>
+        <input type="submit" value="Add Contact">
+      </form>
+    </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="phone.js"></script>
+  </body>
+</html>
