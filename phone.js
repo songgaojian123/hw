@@ -1,25 +1,25 @@
-$(document).ready(function() { // do this when the document is loaded
-	$("#Dialer").show(); // show the element with ID "element"
-	$("#ContactList").hide(); // hide the element with ID "otherElement"
-  	$("#AddContact").hide(); // hide the element with ID "otherElement"
+$(document).ready(function() { 
+	$("#Dialer").show();
+	$("#ContactList").hide(); 
+  	$("#AddContact").hide(); 
 });
 
-$("#DialerBtn").click(function() { // when "button_id" is clicked
-	$("#Dialer").show(); // show element
-	$("#AddContact").hide();	// hide other element
-  	$("#ContactList").hide();	// hide other element
+$("#DialerBtn").click(function() { 
+	$("#Dialer").show(); 
+	$("#AddContact").hide();	
+  	$("#ContactList").hide();	
 });
 
-$("#AddContactBtn").click(function() { // when "button_id" is clicked
+$("#AddContactBtn").click(function() { 
 	$("#Dialer").hide(); // show element
-	$("#AddContact").show();	// hide other element
-  	$("#ContactList").hide();	// hide other element
+	$("#AddContact").show();	
+  	$("#ContactList").hide();	
 });
 
-$("#ContactListBtn").click(function() { // when "button_id" is clicked
+$("#ContactListBtn").click(function() { 
 	$("#Dialer").hide(); // show element
-	$("#AddContact").hide();	// hide other element
-  	$("#ContactList").show();	// hide other element
+	$("#AddContact").hide();	
+  	$("#ContactList").show();	
 });
 
 function dialButton(button) {
